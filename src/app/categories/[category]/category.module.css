@@ -1,0 +1,66 @@
+.title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 20px 0 10px;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+  padding: 10px 0 60px;
+}
+
+.card {
+  width: 200px;
+  text-align: center;
+  font-family: Arial;
+}
+
+.media {
+  display: block;
+}
+
+.card img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 10px 0 4px;
+  color: #111;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.name:hover { text-decoration: underline; }
+
+.category {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-bottom: 6px;
+}
+
+.price {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 4px 0 8px;
+}
+
+/* כפתור Add to Cart צהוב */
+.button {
+  display: inline-block;
+  background: #ffb400;
+  color: #111;
+  border: none;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 4px;
+}
