@@ -31,7 +31,7 @@ export const useWishStore = create<WishState>()(
       },
     }),
     {
-      name: "wish-storage", // שם ב-localStorage
+      name: "wish-storage", 
     }
   )
 );

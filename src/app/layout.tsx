@@ -4,9 +4,9 @@ import Link from "next/link";
 import { useEffect, useState, ReactNode } from "react";
 import { usePathname } from "next/navigation";
 import s from "./components/Header/Header.module.css";
-
 import { useCartStore } from "@/src/app/store/cartStore";
 import { useWishStore } from "@/src/app/store/wishStore";
+import CartDrawer from "@/src/app/components/CartDrawer/CartDrawer";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   const [categories, setCategories] = useState<string[]>([]);
@@ -89,6 +89,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </header>
 
         <main style={{ padding: "20px" }}>{children}</main>
+  <CartDrawer />
+
       </body>
     </html>
   );

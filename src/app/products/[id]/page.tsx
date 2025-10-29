@@ -73,13 +73,12 @@ export default function ProductDetailsPage() {
                   quantity: 1,
                   image: product.image,
                 });
-                openCart(); // פותח את מסגרת העגלה
+                openCart(); 
               }}
             >
               ADD TO CART
             </button>
 
-            {/* אופציונלי: שמירה ל־Wish */}
             <button
               className={s.cta}
               style={{ background: "#111", color: "#fff" }}

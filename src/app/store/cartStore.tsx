@@ -6,7 +6,7 @@ export type CartItem = {
   title: string;
   price: number;
   quantity: number;
-  image?: string; // לשימוש בתצוגה
+  image?: string; 
 };
 
 type CartState = {
@@ -32,7 +32,6 @@ export const useCartStore = create<CartState>()(
         set((state) => {
           const existing = state.items.find((i) => i.id === item.id);
           if (existing) {
-            // אם מגיעה תמונה בפריט חדש ואין באייטם הישן, נמלא אותה (Backfill)
             return {
               items: state.items.map((i) =>
                 i.id === item.id
