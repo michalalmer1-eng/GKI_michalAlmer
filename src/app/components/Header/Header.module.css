@@ -12,19 +12,19 @@
   font-weight: 800; color: #111; text-decoration: none; letter-spacing: .3px;
 }
 .logo{
-  height: 28px;         /* שליטה על גודל הלוגו */
-  width: auto;          /* שומר יחס */
+  height: 28px;       
+  width: auto;         
   display: block;
 }
 .nav{
   display: flex; align-items: center; gap: 22px;
-  margin-inline: auto;                    /* מרכז את התפריט */
+  margin-inline: auto;               
 }
 .link{
   color: #222; text-decoration: none; font-weight: 600; font-size: 14px;
   padding: 4px 2px;
 }
-.active{ color: #f5b800; }               /* לשונית פעילה בצהוב */
+.active{ color: #f5b800; }            
 .cart{ margin-left: auto; color: #111; font-weight: 600; font-size: 14px; }
 .badge{ font-weight: 700; }
 @media (max-width: 720px){

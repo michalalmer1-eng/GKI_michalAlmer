@@ -66,7 +66,7 @@ export default function CategoryPage({
               className={s.button}
               onClick={() => {
                 addToCart({ id: p.id, title: p.title, price: p.price, quantity: 1, image: p.image });
-                openCart(); // פתיחת המסגרת
+                openCart(); 
               }}
             >
               ADD TO CART

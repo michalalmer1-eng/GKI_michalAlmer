@@ -23,7 +23,6 @@ export default function HomePage() {
 
   useEffect(() => {
     async function fetchProducts() {
-      // בלי limit: נטען את כל המוצרים
       const res = await fetch("https://fakestoreapi.com/products", { cache: "no-store" });
       const data = await res.json();
       setProducts(data);
